@@ -13,6 +13,10 @@ namespace Humanoids
             Robot robot1 = new Robot();
             robot1.Designation = "OO-P0";
 
+            Cyborg cyborg1 = new Cyborg();
+            cyborg1.Name = "Seven";
+            cyborg1.Designation = "7 of 9";
+
             DisplayDetails(human1);
             DoBasicHumanoidStuff(human1);
             human1.Eat();
@@ -22,6 +26,11 @@ namespace Humanoids
             DoBasicHumanoidStuff(robot1);
             robot1.Recharge();
             robot1.FireLaser();
+
+            DisplayDetails(cyborg1);
+            DoBasicHumanoidStuff(cyborg1);
+            cyborg1.Recharge();
+            cyborg1.FireLaser();
 
         }
 
