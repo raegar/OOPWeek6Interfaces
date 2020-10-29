@@ -2,7 +2,7 @@ using System;
 
 namespace Humanoids
 {
-    class Robot : Humanoid
+    class Robot : Humanoid, IGetDetails
     {
         public string Designation {get; set;}
 
@@ -21,7 +21,7 @@ namespace Humanoids
             Console.WriteLine($"Beep boop. {wordsToSpeak}");
         }
 
-        public override string GetDetails()
+        public string GetDetails()
         {
             string details = $"Designation: {Designation}";
             return details;
