@@ -2,9 +2,20 @@ using System;
 
 namespace Humanoids
 {
-    class Human : Humanoid, IGetDetails
+    class Human : IHumanoid, IGetDetails
     {
         public string Name {get; set;}
+
+        public void Speak(string wordsToSpeak)
+        {
+            Console.WriteLine(wordsToSpeak);
+        }
+
+        public void Walk()
+        {
+            Console.WriteLine("Going for a walk");
+        }
+
 
         public void Eat()
         {

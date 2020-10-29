@@ -2,7 +2,7 @@ using System;
 
 namespace Humanoids
 {
-    class Robot : Humanoid, IGetDetails
+    class Robot : IHumanoid, IRobot, IGetDetails
     {
         public string Designation {get; set;}
 
@@ -16,9 +16,14 @@ namespace Humanoids
             Console.WriteLine("Firing mah laser");
         }
 
-        public override void Speak(string wordsToSpeak)
+        public void Speak(string wordsToSpeak)
         {
             Console.WriteLine($"Beep boop. {wordsToSpeak}");
+        }
+
+        public void Walk()
+        {
+            Console.WriteLine("Going for a walk");
         }
 
         public string GetDetails()
