@@ -14,9 +14,6 @@ namespace Humanoids
             Console.WriteLine("Going for a walk");
         }
 
-        public virtual string GetDetails()
-        {
-            return "";
-        }
+        public abstract string GetDetails();
     }
 }
