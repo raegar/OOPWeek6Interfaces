@@ -27,7 +27,7 @@ namespace Humanoids
             Console.WriteLine("Zzzzzzzzz.....");
         }
 
-        public string GetDetails()
+        public virtual string GetDetails()
         {
             string details = $"Name: {Name}";
 
